@@ -1,0 +1,206 @@
+/* Limpando as formatações padrões */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+/* 
+*** Layout ***
+*/
+
+
+#area-cabecalho {
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+#area-logo, #area-menu {
+    padding: 10px;
+}
+
+#area-principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
+#area-lateral {
+    width: 240px;
+    float: right;
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.conteudo-lateral {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px ;
+}
+
+#rodape {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #ccc;
+    font-weight: 600;
+}
+
+/* 
+*** Formatações do menu ***
+*/
+
+a{
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: 500;
+    transition: .5s;
+}
+
+a:hover{
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: 500;
+    color: #91721b;
+    transition: .5s;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+    color: #fff;
+    padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+    color: #f7b600;
+    background: white;
+    transition: 1s;
+}
+
+#categorias-laterais a{
+    display: grid;
+    color: #f7b600;
+}
+
+#categorias-laterais a:hover{
+    display: grid;
+    color: #91721b;
+}
+
+/* 
+*** Formatações em Geral ***
+*/
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #f7b600;   
+}
+
+h3 {
+    color: #565656;   
+    background: #CCC;
+    padding: 5px;
+}
+
+.data-postagem {
+    font-size: .8em;
+    border-bottom: 1px solid #eeebeb;
+    font-weight: bold;
+    margin-top: 1.5px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.texto-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.branco {
+    color: white;
+}
+
+.postagem p {
+    margin-top: 15px;
+    margin-bottom: 19px;
+}
+
+.postagem a{
+    background: #f7b600;
+    color: #77489f;
+    border: 3px solid #f7b600;
+    border-radius: 40px;
+    font-size: 13px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.postagem a:hover{
+    color: #77489f;
+    transition: 1s;
+    border: 3px solid #cba2ee;
+    background: #cba2ee;
+    border-radius: 40px;
+    
+}
+
+.link-lateral {
+    color: #f7b600;
+    font-size: .8em;
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #area-principal {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    
+    
+   
+
+    #area-cabecalho {
+        width: 50em;
+    }
+}
+
+@media screen and (max-width: 1140px){
+
+    .conteudo-lateral {
+        display: none;
+    }
+    
+
+    #area-principal {
+        padding: 15px;
+    }
+
+
+}
